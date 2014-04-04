@@ -1,0 +1,201 @@
+body,
+input,
+textarea,
+select
+{
+	font: 400 100%/1.5 'Open Sans', sans-serif;
+}
+
+
+html,
+body
+{
+	margin: 0;
+	padding: 0;
+
+}
+
+body
+{
+	cursor: default;
+	overflow-y: scroll;
+}
+
+header
+{
+	background: #eee;
+	border-bottom: 1px solid #ccc;
+}
+
+header h1
+{
+	margin: 0;
+	padding: 5px 15px;
+}
+
+footer
+{
+	display: none;
+	position: fixed;
+	bottom: 0;
+	right: 0;
+	background: #eee;
+	border-left: 1px solid #ccc;
+	border-top: 1px solid #ccc;
+}
+footer a
+{
+	display: inline-block;
+	padding: 10px;
+}
+
+
+#output
+{
+	margin: 25px 45px 14px 25px;
+}
+
+#toc section
+{
+	display: inline-block;
+	margin-right: 2em;
+	vertical-align: top;
+}
+
+.empty
+{
+	font-style: italic;
+}
+
+.info
+{
+}
+.info span
+{
+	font-weight: 600;
+}
+.error
+{
+	color: #900;
+}
+
+div.thing
+{
+	display: inline-block;
+	vertical-align: top;
+	margin-top: 2em;
+	margin-right: 2em;
+}
+
+
+a
+{
+	text-decoration: none;
+}
+h1 a,
+h2 a,
+h3 a,
+h4 a
+{
+	color: inherit;
+}
+
+
+
+table
+{
+	margin-top: 1em;
+	border-collapse: collapse;
+	font-size: .8em;
+}
+td,
+th
+{
+	border: 1px solid #ccc;
+	padding: .5em 1em;
+	vertical-align: top;
+	text-align: left;
+}
+th
+{
+	font-weight: 600;
+	background-color: #eee;
+	white-space: nowrap;
+}
+thead th
+{
+	text-align: center;
+	font-size: small;
+}
+
+
+
+h1,
+h2,
+h3
+{
+	font-family: 'Open Sans Condensed', sans-serif;
+	font-weight: 300;
+	margin-top: 2em;
+	margin-bottom: .5em;
+
+	transition : border-top-color 500ms ease-out; 
+	-webkit-transition : border-top-color 500ms ease-out; 
+	-moz-transition : border-top-color 500ms ease-out;
+	-o-transition : border-top-color 500ms ease-out; 
+}
+h1+*,
+h2+*,
+h3+*
+{
+	margin-top: 0;
+}
+
+h1
+{
+	font-size: 4em;
+}
+h2
+{
+	font-size: 3em;
+	border-top: 5px solid #fc9;
+}
+h3
+{
+	margin-top: .5em;
+	margin-bottom: 0;
+	font-size: 2em;
+	border-top: 5px solid #fdb;
+}
+
+.target h2,
+.target h3
+{
+	border-top-color: #f90; 
+}
+
+dt
+{
+	font-size: 1.2em;
+	font-family: 'Open Sans Condensed', sans-serif;
+	font-weight: 300;
+}
+dd
+{
+	margin-left: 2em;
+}
+dd:before
+{
+	content: "·";
+	padding-right: .5em;
+	color: #777;
+}
+
+
+
+.schema
+{
+	font-size: x-small;
+	margin-top: -.5em;
+	color: #aaa;
+}

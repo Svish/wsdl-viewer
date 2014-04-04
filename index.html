@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<meta charset="utf-8"> 
+
+		<title id="wsdl-name-title">Documentation</title>
+
+		<link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Open+Sans:400italic,400,600|Open+Sans+Condensed:300" />
+		<link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/normalize/3.0.0/normalize.min.css" />
+		<link rel="stylesheet" type="text/css" href="styles.css" />
+
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
+		<script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.4/jquery-ui.min.js"></script>
+		<script src="Saxon-CE_1.1/Saxonce/Saxonce.nocache.js"></script>
+		<script src="index.js"></script>
+	</head>
+	<body>
+		<header>
+			<h1 id="wsdl-name-header">WSDL Viewer</h1>
+		</header>
+		
+		<div id="output">
+			<form method="GET">
+				<p>
+					<input type="text" name="wsdl" id="wsdl" size="50" placeholder="Absolute or relative URI to WSDL" />
+					<button type="submit">Load</button><br/>
+					<small>Note that Access-Control-Allow-Origin header must be present if this page and the WSDL does not share origin.</small>
+				</p>
+			</form>
+
+		</div>
+
+		<footer><a href="#top"><img src="up.svg" height="24" /></a></footer>
+
+	</body>
+</html>
