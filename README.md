@@ -3,7 +3,7 @@ Introduction
 
 This was made for viewing WSDL files which has been properly documented in a browser without having the need of any server side preprocessing.
 
-The WSDL to HTML conversion is done on-the-fly in the browser through Saxon-CE. The XSLT it uses is based upon the [WSDL viewer](http://code.google.com/p/wsdl-viewer/) which is also used within the [Apache Woden project](http://ws.apache.org/woden/index.html), but it has been modified quite a bit. Both to make it work smoothly with Saxon-CE and look nicer, but also to fix quite a lot of bugs and poorly written XSLT. The last bit is a work in progress, as there are still some things that doesn't seem to work as they should or just work terribly inefficient.
+The WSDL to HTML conversion is done on-the-fly in the browser through [Saxon-CE](http://www.saxonica.com/ce/index.xml). The XSLT it uses is based upon the [WSDL viewer](http://code.google.com/p/wsdl-viewer/) which is also used within the [Apache Woden project](http://ws.apache.org/woden/index.html), but it has been modified quite a bit. Both to make it work smoothly with Saxon-CE and look nicer, but also to fix quite a lot of bugs and poorly written XSLT. The last bit is a work in progress, as there are still some things that doesn't seem to work as they should or just work terribly inefficient.
 
 
 
