@@ -21,7 +21,7 @@ var onSaxonLoad = function()
 			$('#output')
 				.html('<p class="info"><span>Loading:</span> '+url+'<br/><small>May take a short while for very large WSDLs...</small></p>');
 
-			setTimeout(loadWsdl, 250, name, url);
+			setTimeout(loadWsdl, 250, name, url); // Without delay the Loading text might freeze weirdly
 		}
 	})
 };
@@ -83,13 +83,24 @@ function createToc()
 		.each(function()
 		{
 			var header = $('<h3>').text($('h2', this).text());
-			var items = $('<ul>');
+			var items = [];
 
 			$('div.thing', this)
 				.each(function()
 				{
-					items.append('<li><a href="#'+this.id+'">'+$('h3', this).text()+'</a></li>');
+					items.push('<li><a href="#'+this.id+'">'+$('h3', this).text()+'</a></li>');
 				})
+
+			items.sort(function(a,b)
+			{
+				a = a.match(/"(.+)"/)[1];
+				b = b.match(/"(.+)"/)[1];
+				if(a > b) return 1;
+				if(a < b) return -1;
+				return 0;
+			});
+
+			$('<ul>').append(items);
 
 			$('<section>')
 				.append(header)

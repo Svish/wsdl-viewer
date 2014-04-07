@@ -1,0 +1,9 @@
+TODO
+
+- Fix 'Used by', which doesn't seem to work properly...
+- Operation -> Message -> Element
+- Element / Used By bug?
+- Remove choose in xs:import template (no TOC anymore)
+- Figure out what's going on with operation Faults
+
+- Pull in base properties for extended complex types?
